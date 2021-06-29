@@ -53,6 +53,7 @@
           {{ form.seeking_description(class_ = 'form-control', autofocus = true) }}
       </div>
       
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
       <input type="submit" value="Edit Artist" class="btn btn-primary btn-lg btn-block">
     </form>
   </div>
